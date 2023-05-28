@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../DS_Artix_7_Vivado_Project.srcs/sources_1/new/LED_CONTROL.v" \
+"../../../../DS_Artix_7_Vivado_Project.srcs/sources_1/new/num_spliter.v" \
+"../../../../DS_Artix_7_Vivado_Project.srcs/sources_1/new/num_to_seg.v" \
+"../../../../DS_Artix_7_Vivado_Project.srcs/sim_1/new/Test.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
