@@ -29,6 +29,6 @@ module top(
     clk_div #(10000) dv(.clk(sys_clk), .clk2(clk));
     
     LED_CONTROL ldcntrl(.an_mask(an_mask), .number(numbers), .reset(0),
-    .clk(clk), .clk_enable(1'b1), .anodes(anodes), .segments(segments));
+    .sys_clk(clk), .clk_enable(1'b1), .anodes(anodes), .segments(segments));
     
 endmodule
